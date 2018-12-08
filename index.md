@@ -1,12 +1,60 @@
-## Welcome to GitHub Pages
+## MNMLST
+![Logo](captaincoco4.github.io/logo.PNG)
 
-You can use the [editor on GitHub](https://github.com/CaptainCoco4/captaincoco4.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Game Description
+**MNMLST**, also known as _MINIMALIST_, is a game where one is expected to stay focused.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Game Preview
+Anyone with enough intuition can easily play the game from the get-go. But first, you must press Enter in order to proceed to the next screen.
 
-### Markdown
+**1.** Choose wave count (number of circles being dropped per wave)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![ Wave ](captaincoco4.github.io/wave.PNG)
+
+**2.** A 3-2-1 countdown will commence to prepare you for the incoming wave of _Directions_
+
+![ Countdown ](captaincoco4.github.io/countdown.PNG)
+
+**3.** Circles with arrows, referred to as _Directions_, will start going down. The amount of _Directions_ per game will depend on the number you've chosen from the previous screen.
+
+![ Game ](captaincoco4.github.io/game.PNG)
+
+These _Directions_ are instances of a user-defined object, `Arrow`.
+```markdown
+# defined in engine.py
+class Box:
+    def __init__(self, x, y, width, height):
+        self.x = x
+        self.y = y
+        self.w = width
+        self.h = height
+        
+# defined in assets.py
+class Arrow:
+    def __init__(self, x, y, width, height, image, direction):
+        self.box = engine.Box(x, y, width, height)
+        self.pic = picture(self.box.x + self.box.w// 4, self.box.y + self.box.y // 4, self.box.w//2, image, height=self.box.h//2)
+        self.direction = direction
+
+    def moveDown(self, velocity):
+        self.box.y -= int(velocity)
+        self.pic.y -= int(velocity)
+
+    def place(self, x=None, y=None):
+        if x != None:
+            self.box.x = x
+            self.pic.x = self.box.x + self.box.w//4
+        if y != None:
+            self.box.y = y
+            self.pic.y = self.box.y + self.box.h//4
+    
+    def draw(self):
+        self.pic.draw()
+```
+
+**4.** The game will end when the timer ends, missed a _Direction_, or pressed one of the arrow keys too early. The game will show your final score at the end.
+
+![ Final ](captaincoco4.github.io/final.PNG)
 
 ```markdown
 Syntax highlighted code block
