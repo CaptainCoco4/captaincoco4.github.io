@@ -1,10 +1,10 @@
 ## MNMLST
 ![Logo](captaincoco4.github.io/logo.PNG)
 
-### Game Description
+## Game Description
 **MNMLST**, also known as _MINIMALIST_, is a game where one is expected to stay focused.
 
-### Game Preview
+## Game Preview
 Anyone with enough intuition can easily play the game from the get-go. But first, you must press Enter in order to proceed to the next screen.
 
 **1.** Choose wave count (number of circles being dropped per wave)
@@ -56,30 +56,22 @@ class Arrow:
 
 ![ Final ](captaincoco4.github.io/final.PNG)
 
-```markdown
-Syntax highlighted code block
+## Game Controls
+- Quit Game --> **Esc**
+- Play Game --> **Arrow Keys**
 
-# Header 1
-## Header 2
-### Header 3
+## Game Graphics
+- Backgorund Image --> [ Here ](https://wallpaperscraft.com/download/triangles_patterns_texture_127001/3840x2160?fbclid=IwAR2-L6SA7j3C1TfD8mKRmt77QAE49_pKG5UdW-1SPc1-MigsAmg-in7nWmc)
 
-- Bulleted
-- List
+![ Background Image ](captaincoco4.github.io/background2.jpg)
 
-1. Numbered
-2. List
+- Sample Hit Arrow
 
-**Bold** and _Italic_ and `Code` text
+![ Right Arrow ](captaincoco4.github.io/right.png)
 
-[Link](url) and ![Image](src)
-```
+- Sample Moving Arrow
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+![ Moving Right Arrow ](captaincoco4.github.io/mright.png)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CaptainCoco4/captaincoco4.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Column Highlighter
+![ Column Highlighter ](captaincoco4.github.io/highlighter.png)
