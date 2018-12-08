@@ -61,7 +61,7 @@ class Arrow:
 - Play Game --> **Arrow Keys**
 
 ## Game Graphics
-- Backgorund Image --> [ Here ](https://wallpaperscraft.com/download/triangles_patterns_texture_127001/3840x2160?fbclid=IwAR2-L6SA7j3C1TfD8mKRmt77QAE49_pKG5UdW-1SPc1-MigsAmg-in7nWmc)
+- Background Image --> [ Here ](https://wallpaperscraft.com/download/triangles_patterns_texture_127001/3840x2160?fbclid=IwAR2-L6SA7j3C1TfD8mKRmt77QAE49_pKG5UdW-1SPc1-MigsAmg-in7nWmc)
 
 ![ Background Image ](captaincoco4.github.io/background2.jpg)
 
