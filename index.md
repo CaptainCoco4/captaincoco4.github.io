@@ -20,7 +20,7 @@ Anyone with enough intuition can easily play the game from the get-go. But first
 ![ Game ](captaincoco4.github.io/game.PNG)
 
 These _Directions_ are instances of a user-defined object, `Arrow`.
-```markdown
+```python
 # defined in engine.py
 class Box:
     def __init__(self, x, y, width, height):
